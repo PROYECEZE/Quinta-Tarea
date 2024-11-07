@@ -1,14 +1,71 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#506690',
+          }
+        }
+      }
+    }
+  </script>
   <title>andkit</title>
 </head>
-<body>
-  <header>
+<body class="bg-gray-100">
+  <header class="container mx-auto">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6">
+      <div class="flex h-16 items-center justify-between">
+        <div class="flex items-center">
+          <a href="#"> <img class=""src="image/Logo.png" alt=""> </a>
+        </div>
+        <nav class="flex space-x-8">
+          <a href="#" class="text-gray-600 hover:text-gray-900"> Articles </a>
+          <a href="#" class="text-gray-600 hover:text-gray-900"> Favorites </a>
+        </nav>
+      </div>
+    </div>
   </header>
-  <main>
+  <main class="mx-auto max-w-3xl px-4 py-12 sm:px-6 lg:px-8">
+    <h1 class="text-center text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl"> Should I work remotely or will it put a strain on my long-term career?</h1>
+    <p class="mt-6 text-xl text-clifford font-black font-Roboto text-center"> As part of our ongoing effort to enhance the traveler journey, we're proud to partner with Portland International Airport (PDX) on the launch of a pilot program designed to shorten rider wait times at pickup. </p>
+    <div class="mt-8 flex items-center justify-between">
+      <div class="flex items-center">
+        <Image src="/placeholder.svg?height=40&width=40" alt="Alice Cooper" width={40} height={40} class="rounded-full" />
+        <div class="ml-3">
+          <p class="font-semibold text-gray-900">ALICE COOPER</p>
+          <p class="text-sm text-gray-500">Published on May 20, 2019</p>
+        </div>
+      </div>
+      <div class="flex items-center space-x-4">
+        <span class="text-sm text-gray-500">SHARE:</span>
+        <a href="#" class="text-gray-400 hover:text-gray-500">
+          <Instagram class="h-5 w-5" />
+        </a>
+        <a href="#" class="text-gray-400 hover:text-gray-500">
+          <Facebook class="h-5 w-5" />
+        </a>
+        <a href="#" class="text-gray-400 hover:text-gray-500">
+          <Twitter class="h-5 w-5" />
+        </a>
+      </div>
+    </div>
+    <div class="mt-8">
+      <Image src="/placeholder.svg?height=400&width=800" alt="Person looking at wall with photos" width={800} height={400} class="rounded-lg" />
+      <p class="mt-2 text-center text-sm text-blue-600/60"> This is a caption on this photo for reference </p>
+    </div>
+    <div class="prose prose-lg mt-10 max-w-none">
+      <p> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. </p>
+      <p class="pt-5"> Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur? </p>
+    </div>
   </main>
 </body>
 </html>
+
