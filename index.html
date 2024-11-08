@@ -6,27 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
   <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            darkBlue: '#506690',
-            lightBlue: '#869AB8'
-          },
-          fontFamily: {
-            roboto: ['"roboto"']
-          }
-        }
-      }
-    }
-  </script>
+  <script src="index.js"></script>
   <title>andkit</title>
 </head>
 <body class="bg-gray-100">
   <header class="bg-white py-2">
     <div class=" container mx-auto max-w-7xl px-4 sm:px-6">
-      <div class="flex h-16 items-center gap-64">
+      <div class="flex h-16 items-center gap-72">
         <div class="flex items-center">
           <a href="#"><svg width="111" height="43" viewBox="0 0 111 43" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M41.5078 32.2344C42.9023 32.2344 44.1445 31.7891 45.1523 30.3242L45.3398 32H47.6953V24.8984C47.6953 22.0391 45.8203 20.0469 42.6328 20.0469C40.3242 20.0469 38.8359 21.0781 37.7109 22.6133L39.9023 24.1953C40.4062 23.3398 41.3086 22.543 42.6562 22.543C44.168 22.543 44.9648 23.5273 44.9648 25.0156H41.918C39.293 25.0156 37.2539 25.8594 37.2539 28.4023C37.2539 30.8516 39.1055 32.2344 41.5078 32.2344ZM41.918 29.8203C40.8047 29.8203 40.1836 29.2695 40.1836 28.4961C40.1836 27.7578 40.7812 27.0781 42.082 27.0781H44.9648C44.918 28.543 43.5469 29.8203 41.918 29.8203Z" fill="#335EEA"/>
@@ -43,21 +29,21 @@
             </a>
         </div>
         <nav class="flex space-x-8 font-roboto">
-          <a href="#" class="hover:text-blue-700 text-darkBlue font-black"> Articles </a>
-          <a href="#" class="hover:text-blue-700 text-darkBlue font-black"> Favorites </a>
+          <a href="#" class="hover:text-blue-700 text-darkBlue font-black text-postInfo"> Articles </a>
+          <a href="#" class="hover:text-blue-700 text-darkBlue font-black text-postInfo"> Favorites </a>
         </nav>
       </div>
     </div>
   </header>
-  <main class="mx-auto max-w-3xl px-4 py-24 sm:px-6 lg:px-8 font-roboto container">
-    <h1 class="text-center text-4xl font-bold text-gray-900 sm:text-4xl"> Should I work remotely or will it put a strain on my long-term career?</h1>
-    <p class="mt-6 text-xl text-darkBlue font-black text-center">As part of our ongoing effort to enhance the traveler journey, we're proud to partner with Portland International Airport (PDX) on the launch of a pilot program designed to shorten rider wait times at pickup. </p>
+  <main class="container max-w-dimensions py-24 sm:px-0 font-roboto">
+    <h1 class="text-center font-bold text-lighBlack text-43px"> Should I work remotely or will it put a strain on my long-term career?</h1>
+    <p class="mt-6 text-postSubtitle text-darkBlue font-black text-center">As part of our ongoing effort to enhance the traveler journey, we're proud to partner with Portland International Airport (PDX) on the launch of a pilot program designed to shorten rider wait times at pickup. </p>
     <div class="my-20 flex items-center justify-between">
       <div class="flex items-center">
-        <Image src="image/women.png" alt="Alice Cooper" width={40} height={40} class="rounded-full" />
+        <Image src="image/women.png" alt="Alice Cooper"class="w-9 h-auto"/>
         <div class="ml-3">
-          <p class="font-semibold text-gray-900">ALICE COOPER</p>
-          <p class="text-sm text-darkBlue font-black opacity-70">Published on May 20, 2019</p>
+          <p class="font-semibold text-gray-900 text-xs tracking-wider font-black text-lighBlack">ALICE COOPER</p>
+          <p class="mt-0.5 text-sm text-darkBlue font-black opacity-70 text-xs">Published on May 20, 2019</p>
         </div>
       </div>
       <div class="flex items-center space-x-4">
@@ -80,12 +66,12 @@
       </div>
     </div>
     <div class="mt-8">
-      <Image src="image/works.png" alt="Person looking at wall with photos" width={800} height={400} class="rounded-lg" />
-      <p class="mt-2 text-center text-sm text-lightBlue font-black"> This is a caption on this photo for reference </p>
+      <Image src="image/works.png" alt="Person looking at wall with photos" width={800} height={400}/>
+      <p class="mt-4 text-center text-sm text-lightBlue font-black"> This is a caption on this photo for reference </p>
     </div>
-    <div class="prose prose-lg mt-10 max-w-none">
-      <p class="font-black"> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. </p>
-      <p class="pt-9 font-black"> Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur? </p>
+    <div class="mt-10 max-w-none">
+      <p class="font-black text-postInfo"> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. </p>
+      <p class="pt-9 font-black text-postInfo"> Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur? </p>
     </div>
   </main>
 </body>
